@@ -8,6 +8,20 @@
 import SwiftUI
 
 struct LoginView: View {
+    var body: some View {
+        ZStack {
+            Image("spotify_login_image")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(minWidth: 0, maxWidth: .infinity)
+                .edgesIgnoringSafeArea(.all)
+            VStack {
+                signupButtons()
+                    .padding(.horizontal, buttonHorizontalPadding)
+            }
+        }
+    }
+
     private func signupButtons() -> some View {
         VStack(spacing: 10) {
             ForEach(LoginType.allCases, id: \.self) { type in
