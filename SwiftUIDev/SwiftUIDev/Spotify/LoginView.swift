@@ -74,6 +74,11 @@ struct LoginView: View {
         .padding(.vertical, 40)
     }
 
+    private func textSize(_ textStyle: UIFont.TextStyle) -> CGFloat {
+        return UIFont.preferredFont(forTextStyle: textStyle).pointSize
+    }
+}
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
