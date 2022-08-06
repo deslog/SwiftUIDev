@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3805A7A9289EFD30009A34A3 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3805A7A8289EFD30009A34A3 /* Gotham-Bold.otf */; };
+		3805A7AB289EFD3E009A34A3 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3805A7AA289EFD3E009A34A3 /* Gotham-Black.otf */; };
 		3861D1A8289EE5CE0001C187 /* SwiftUIDevApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1A7289EE5CE0001C187 /* SwiftUIDevApp.swift */; };
 		3861D1AA289EE5CE0001C187 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1A9289EE5CE0001C187 /* ContentView.swift */; };
 		3861D1AC289EE5CE0001C187 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3861D1AB289EE5CE0001C187 /* Assets.xcassets */; };
 		3861D1AF289EE5CE0001C187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3861D1AE289EE5CE0001C187 /* Preview Assets.xcassets */; };
+		3861D1B6289EE6900001C187 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1B5289EE6900001C187 /* Model.swift */; };
+		3861D1B9289EE6A70001C187 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1B8289EE6A70001C187 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3805A7A8289EFD30009A34A3 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		3805A7AA289EFD3E009A34A3 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		3805A7AC289EFDD2009A34A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3861D1A4289EE5CE0001C187 /* SwiftUIDev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIDev.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3861D1A7289EE5CE0001C187 /* SwiftUIDevApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIDevApp.swift; sourceTree = "<group>"; };
 		3861D1A9289EE5CE0001C187 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3861D1AB289EE5CE0001C187 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3861D1AE289EE5CE0001C187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3861D1B5289EE6900001C187 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3861D1B8289EE6A70001C187 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +41,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3805A7AD289EFE00009A34A3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3805A7A8289EFD30009A34A3 /* Gotham-Bold.otf */,
+				3805A7AA289EFD3E009A34A3 /* Gotham-Black.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		3861D19B289EE5CE0001C187 = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +69,8 @@
 		3861D1A6289EE5CE0001C187 /* SwiftUIDev */ = {
 			isa = PBXGroup;
 			children = (
+				3805A7AC289EFDD2009A34A3 /* Info.plist */,
+				3861D1B7289EE6970001C187 /* Spotify */,
 				3861D1A7289EE5CE0001C187 /* SwiftUIDevApp.swift */,
 				3861D1A9289EE5CE0001C187 /* ContentView.swift */,
 				3861D1AB289EE5CE0001C187 /* Assets.xcassets */,
@@ -65,6 +85,16 @@
 				3861D1AE289EE5CE0001C187 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3861D1B7289EE6970001C187 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				3805A7AD289EFE00009A34A3 /* Fonts */,
+				3861D1B5289EE6900001C187 /* Model.swift */,
+				3861D1B8289EE6A70001C187 /* LoginView.swift */,
+			);
+			path = Spotify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +155,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3805A7A9289EFD30009A34A3 /* Gotham-Bold.otf in Resources */,
+				3805A7AB289EFD3E009A34A3 /* Gotham-Black.otf in Resources */,
 				3861D1AF289EE5CE0001C187 /* Preview Assets.xcassets in Resources */,
 				3861D1AC289EE5CE0001C187 /* Assets.xcassets in Resources */,
 			);
@@ -137,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3861D1B6289EE6900001C187 /* Model.swift in Sources */,
 				3861D1AA289EE5CE0001C187 /* ContentView.swift in Sources */,
+				3861D1B9289EE6A70001C187 /* LoginView.swift in Sources */,
 				3861D1A8289EE5CE0001C187 /* SwiftUIDevApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +304,7 @@
 				DEVELOPMENT_TEAM = 82DRSFKFS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDev/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +334,7 @@
 				DEVELOPMENT_TEAM = 82DRSFKFS9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SwiftUIDev/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
