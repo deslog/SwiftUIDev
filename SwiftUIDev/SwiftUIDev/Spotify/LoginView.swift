@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LoginView: View {
+    let buttonHorizontalPadding = 32.0
+    let mainLogoSize = 44.0
+    let logoImageSize = 20.0
+
     var body: some View {
         ZStack {
             Image("spotify_login_image")
