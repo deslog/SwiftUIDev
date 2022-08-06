@@ -18,6 +18,7 @@ struct LoginView: View {
             VStack {
                 signupButtons()
                     .padding(.horizontal, buttonHorizontalPadding)
+                loginButton()
             }
         }
     }
@@ -42,6 +43,15 @@ struct LoginView: View {
                 .overlay(Capsule().stroke(Color.white, lineWidth: 0.3))
             }
         }
+    }
+
+    private func loginButton() -> some View {
+        Text("Log in")
+            .font(.custom("Gotham-Bold", size: textSize(.title2)))
+            .foregroundColor(.white)
+            .padding(.vertical, 28)
+    }
+
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
