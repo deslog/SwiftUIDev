@@ -16,6 +16,8 @@ struct LoginView: View {
                 .frame(minWidth: 0, maxWidth: .infinity)
                 .edgesIgnoringSafeArea(.all)
             VStack {
+                Spacer()
+                title()
                 signupButtons()
                     .padding(.horizontal, buttonHorizontalPadding)
                 loginButton()
@@ -50,6 +52,22 @@ struct LoginView: View {
             .font(.custom("Gotham-Bold", size: textSize(.title2)))
             .foregroundColor(.white)
             .padding(.vertical, 28)
+    }
+
+    private func title() ->  some View {
+        VStack {
+            Image("spotify")
+                .resizable()
+                .scaledToFit()
+                .frame(width: mainLogoSize)
+            Text("Discover your next")
+                .font(.custom("Gotham-Black", size: textSize(.largeTitle)))
+                .foregroundColor(.white)
+            Text("favorite playlist.")
+                .font(.custom("Gotham-Black", size: textSize(.largeTitle)))
+                .foregroundColor(.white)
+        }
+        .padding(.vertical, 40)
     }
 
 struct LoginView_Previews: PreviewProvider {
