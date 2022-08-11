@@ -46,7 +46,7 @@ struct LoginView: View {
             .padding(.vertical, loginButtonPadding)
     }
 
-    private func title() ->  some View {
+    private func title() -> some View {
         VStack (spacing: titleInterval){
             Image("spotify")
                 .resizable()
