@@ -39,8 +39,7 @@ struct LoginView: View {
 
     private func loginButton() -> some View {
         Text("Log in")
-            .font(.custom("Gotham-Bold", size: textSize(.title2)))
-            .foregroundColor(.white)
+            .loginFontStyle()
             .padding(.vertical, 28)
     }
 
@@ -50,18 +49,11 @@ struct LoginView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: mainLogoSize)
-            Text("Discover your next")
-                .font(.custom("Gotham-Black", size: textSize(.largeTitle)))
-                .foregroundColor(.white)
-            Text("favorite playlist.")
-                .font(.custom("Gotham-Black", size: textSize(.largeTitle)))
-                .foregroundColor(.white)
+            Text("Discover your next \nfavorite playlist")
+                .titleFontStyle()
+                .multilineTextAlignment(.center)
         }
         .padding(.vertical, 40)
-    }
-
-    private func textSize(_ textStyle: UIFont.TextStyle) -> CGFloat {
-        return UIFont.preferredFont(forTextStyle: textStyle).pointSize
     }
 }
 
