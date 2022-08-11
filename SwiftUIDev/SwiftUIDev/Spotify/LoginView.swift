@@ -10,7 +10,10 @@ import SwiftUI
 struct LoginView: View {
     let buttonHorizontalPadding = 32.0
     let mainLogoSize = 44.0
-    let logoImageSize = 20.0
+    let signupButtonInterval = 10.0
+    let loginButtonPadding = 28.0
+    let titleInterval = 28.0
+    let titleAndButtonInterval = 40.0
 
     var body: some View {
         ZStack {
@@ -30,7 +33,7 @@ struct LoginView: View {
     }
 
     private func signupButtons() -> some View {
-        VStack(spacing: 10) {
+        VStack(spacing: signupButtonInterval) {
             ForEach(SignupType.allCases, id: \.self) { type in
                 SignupButton(type: type)
             }
@@ -40,11 +43,11 @@ struct LoginView: View {
     private func loginButton() -> some View {
         Text("Log in")
             .loginFontStyle()
-            .padding(.vertical, 28)
+            .padding(.vertical, loginButtonPadding)
     }
 
     private func title() ->  some View {
-        VStack {
+        VStack (spacing: titleInterval){
             Image("spotify")
                 .resizable()
                 .scaledToFit()
@@ -53,7 +56,7 @@ struct LoginView: View {
                 .titleFontStyle()
                 .multilineTextAlignment(.center)
         }
-        .padding(.vertical, 40)
+        .padding(.vertical, titleAndButtonInterval)
     }
 }
 
