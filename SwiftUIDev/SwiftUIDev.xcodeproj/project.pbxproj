@@ -94,11 +94,8 @@
 		3861D1B7289EE6970001C187 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
-				38E88C6128A4823600B6634E /* Extensions */,
-				38E88C5E28A4809200B6634E /* UIComponents */,
-				3805A7AD289EFE00009A34A3 /* Fonts */,
-				3861D1B5289EE6900001C187 /* Model.swift */,
-				3861D1B8289EE6A70001C187 /* LoginView.swift */,
+				38E88C6528A48A9B00B6634E /* Screens */,
+				38E88C6428A48A9200B6634E /* Global */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -117,6 +114,33 @@
 				38E88C6228A4826200B6634E /* Text+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		38E88C6428A48A9200B6634E /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				38E88C6728A48ACD00B6634E /* Resources */,
+				38E88C5E28A4809200B6634E /* UIComponents */,
+				38E88C6128A4823600B6634E /* Extensions */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		38E88C6528A48A9B00B6634E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				3861D1B8289EE6A70001C187 /* LoginView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		38E88C6728A48ACD00B6634E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3861D1B5289EE6900001C187 /* Model.swift */,
+				3805A7AD289EFE00009A34A3 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
