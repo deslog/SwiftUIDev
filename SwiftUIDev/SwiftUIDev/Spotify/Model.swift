@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-enum LoginType: CaseIterable {
+enum SignupType: CaseIterable {
     case signup
     case google
     case facebook
