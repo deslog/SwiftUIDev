@@ -15,6 +15,7 @@
 		3861D1AF289EE5CE0001C187 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3861D1AE289EE5CE0001C187 /* Preview Assets.xcassets */; };
 		3861D1B6289EE6900001C187 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1B5289EE6900001C187 /* Model.swift */; };
 		3861D1B9289EE6A70001C187 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3861D1B8289EE6A70001C187 /* LoginView.swift */; };
+		38E88C6328A4826200B6634E /* Text+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E88C6228A4826200B6634E /* Text+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		3861D1AE289EE5CE0001C187 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3861D1B5289EE6900001C187 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3861D1B8289EE6A70001C187 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		38E88C6228A4826200B6634E /* Text+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,11 +92,20 @@
 		3861D1B7289EE6970001C187 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
+				38E88C6128A4823600B6634E /* Extensions */,
 				3805A7AD289EFE00009A34A3 /* Fonts */,
 				3861D1B5289EE6900001C187 /* Model.swift */,
 				3861D1B8289EE6A70001C187 /* LoginView.swift */,
 			);
 			path = Spotify;
+			sourceTree = "<group>";
+		};
+		38E88C6128A4823600B6634E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				38E88C6228A4826200B6634E /* Text+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +183,7 @@
 				3861D1B6289EE6900001C187 /* Model.swift in Sources */,
 				3861D1AA289EE5CE0001C187 /* ContentView.swift in Sources */,
 				3861D1B9289EE6A70001C187 /* LoginView.swift in Sources */,
+				38E88C6328A4826200B6634E /* Text+.swift in Sources */,
 				3861D1A8289EE5CE0001C187 /* SwiftUIDevApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
