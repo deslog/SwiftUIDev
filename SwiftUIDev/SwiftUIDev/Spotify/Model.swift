@@ -35,7 +35,7 @@ enum SignupType: CaseIterable {
         case .apple:
             return Image("apple")
         default:
-            return Image("google") // 아무것도 안받게 어케하지? nil로
+            return nil
         }
     }
 
