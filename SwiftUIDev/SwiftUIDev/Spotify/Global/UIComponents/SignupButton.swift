@@ -20,7 +20,8 @@ struct SignupButton: View {
             Spacer()
             Text(type.title)
                 .signupButtonFontStyle(dynamicStyle: .title3, type: type)
-                .foregroundColor(type == .signup ? Color.black : Color.white)
+                .lineLimit(1)
+                .minimumScaleFactor(0.5)
             Spacer()
         }
         .padding()
